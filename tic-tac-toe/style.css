@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: aqua;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 5px;
+  height: 500px;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  align-self: center;
+  height: 50px;
+  font-size: 60px;
+}
+
+p {
+  color: black;
+  font-size: 25px;
+  background-color: aqua;
+  text-align: center;
+}
