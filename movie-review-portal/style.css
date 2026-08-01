@@ -1,24 +1,40 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-    height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  background-color: aqua;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  align-content: center;
 }
 
 #search-movie {
-    height: 40px;
-    width: 400px;
+  height: 40px;
+  width: 400px;
 }
 
 #review-modal {
-    display: none;
+  display: none;
 }
 
 #movie-grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+#search-btn {
+    height: 42px;
+    width: 150px;
+    font-size: 18px;
 }
