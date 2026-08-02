@@ -1,26 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDb Movie Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <header>
-      <h1>Movie Critic Portal</h1>
-        <form>
-            <input type="text" id="search-movie" placeholder="Type Movie Name">
-            <button id="search-btn">Search Movies</button>
+        <h1>Movie Critic Portal</h1>
+        <form id="search-form">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="Search for a movie..." required>
+                <!-- This is the X button -->
+                <span id="clear-btn" class="clear-btn">&times;</span>
+            </div>
+            <button type="submit" class="search-btn">Search</button>
         </form>
     </header>
-    <main id="movie-grid"></main>
-    <div id="review-modal">
-        <textarea></textarea>
-        <button id="save-btn">Save</button>
-    </div>
 
+    <main id="movie-grid"></main>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
